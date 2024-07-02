@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Solution Proposal for Aladdin Metal Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .card-title {
+            display: flex;
+            align-items: center;
+        }
+        .card-title .fas {
+            margin-right: 10px;
+        }
+        .tooltip-inner {
+            max-width: 300px;
+            width: 300px;
+        }
+        .chart-container {
+            position: relative;
+            height: 40vh;
+            width: 80vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Automation Solution Proposal for Aladdin Metal Products</h1>
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <input class="form-control mb-3" id="search-tabs" type="text" placeholder="Search...">
+                <button class="nav-link active" id="nav-exec-summary-tab" data-bs-toggle="tab" data-bs-target="#nav-exec-summary" type="button" role="tab" aria-controls="nav-exec-summary" aria-selected="true">Executive Summary</button>
+                <button class="nav-link" id="nav-business-goals-tab" data-bs-toggle="tab" data-bs-target="#nav-business-goals" type="button" role="tab" aria-controls="nav-business-goals" aria-selected="false">Business Goals</button>
+                <button class="nav-link" id="nav-project-overview-tab" data-bs-toggle="tab" data-bs-target="#nav-project-overview" type="button" role="tab" aria-controls="nav-project-overview" aria-selected="false">Project Overview</button>
+                <button class="nav-link" id="nav-technical-requirements-tab" data-bs-toggle="tab" data-bs-target="#nav-technical-requirements" type="button" role="tab" aria-controls="nav-technical-requirements" aria-selected="false">Technical Requirements</button>
+                <button class="nav-link" id="nav-technology-stack-tab" data-bs-toggle="tab" data-bs-target="#nav-technology-stack" type="button" role="tab" aria-controls="nav-technology-stack" aria-selected="false">Technology Stack</button>
+                <button class="nav-link" id="nav-implementation-plan-tab" data-bs-toggle="tab" data-bs-target="#nav-implementation-plan" type="button" role="tab" aria-controls="nav-implementation-plan" aria-selected="false">Implementation Plan</button>
+                <button class="nav-link" id="nav-time-savings-tab" data-bs-toggle="tab" data-bs-target="#nav-time-savings" type="button" role="tab" aria-controls="nav-time-savings" aria-selected="false">Time Savings</button>
+                <button class="nav-link" id="nav-pricing-strategy-tab" data-bs-toggle="tab" data-bs-target="#nav-pricing-strategy" type="button" role="tab" aria-controls="nav-pricing-strategy" aria-selected="false">Pricing Strategy</button>
+                <button class="nav-link" id="nav-strategic-value-tab" data-bs-toggle="tab" data-bs-target="#nav-strategic-value" type="button" role="tab" aria-controls="nav-strategic-value" aria-selected="false">Strategic Value</button>
+                <button class="nav-link" id="nav-risk-management-tab" data-bs-toggle="tab" data-bs-target="#nav-risk-management" type="button" role="tab" aria-controls="nav-risk-management" aria-selected="false">Risk Management</button>
+                <button class="nav-link" id="nav-timeline-tab" data-bs-toggle="tab" data-bs-target="#nav-timeline" type="button" role="tab" aria-controls="nav-timeline" aria-selected="false">Timeline & Milestones</button>
+                <button class="nav-link" id="nav-resource-allocation-tab" data-bs-toggle="tab" data-bs-target="#nav-resource-allocation" type="button" role="tab" aria-controls="nav-resource-allocation" aria-selected="false">Resource Allocation</button>
+                <button class="nav-link" id="nav-testimonials-tab" data-bs-toggle="tab" data-bs-target="#nav-testimonials" type="button" role="tab" aria-controls="nav-testimonials" aria-selected="false">Testimonials</button>
+                <button class="nav-link" id="nav-financial-projections-tab" data-bs-toggle="tab" data-bs-target="#nav-financial-projections" type="button" role="tab" aria-controls="nav-financial-projections" aria-selected="false">Financial Projections</button>
+                <button class="nav-link" id="nav-stakeholder-analysis-tab" data-bs-toggle="tab" data-bs-target="#nav-stakeholder-analysis" type="button" role="tab" aria-controls="nav-stakeholder-analysis" aria-selected="false">Stakeholder Analysis</button>
+
+
+                <button class="nav-link" id="nav-python-env-tab" data-bs-toggle="tab" data-bs-target="#nav-python-env" type="button" role="tab" aria-controls="nav-python-env" aria-selected="false">Setting Up Your Python Environment and Project</button>
+
+
+                <button class="nav-link" id="nav-conclusion-tab" data-bs-toggle="tab" data-bs-target="#nav-conclusion" type="button" role="tab" aria-controls="nav-conclusion" aria-selected="false">Conclusion</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-exec-summary" role="tabpanel" aria-labelledby="nav-exec-summary-tab">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h2 class="card-title"><i class="fas fa-file-alt"></i> Executive Summary</h2>
+                        <p class="card-text">This document outlines the technical and business specifications for automating key processes at Aladdin Metal Products, aiming to enhance efficiency, reduce manual errors, and provide substantial cost savings. The goal is to achieve a revenue target of $121,800 through a strategic pricing model based on 6-10 licenses and to generate long-term value including employee raises and funding for a new building within four years.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-business-goals" role="tabpanel" aria-labelledby="nav-business-goals-tab">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h2 class="card-title"><i class="fas fa-bullseye"></i> Business Goals</h2>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><span class="badge bg-primary">1</span> Increase Efficiency: Automate repetitive tasks to allow employees to focus on higher-value activities.</li>
+                            <li class="list-group-item"><span class="badge bg-primary">2</span> Reduce Costs: Minimize manual errors and reduce labor costs associated with repetitive tasks.</li>
+                            <li class="list-group-item"><span class="badge bg-primary">3</span> Enhance Data Accuracy: Improve data accuracy through automated data entry and processing.</li>
+                            <li class="list-group-item"><span class="badge bg-primary">4</span> Generate Revenue: Monetize the automation software by selling licenses, aiming to generate $121,800.</li>
+                            <li class="list-group-item"><span class="badge bg-primary">5</span> Support Employee Growth: Enable raises for peers through productivity gains and cost savings.</li>
+                            <li class="list-group-item"><span class="badge bg-primary">6</span> Fund Strategic Investments: Generate sufficient savings and revenue to invest in a new building within four years.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-project-overview" role="tabpanel" aria-labelledby="nav-project-overview-tab">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h2 class="card-title"><i class="fas fa-project-diagram"></i> Project Overview</h2>
+                        <p class="card-text">This project aims to automate interactions with several critical applications and processes at Aladdin Metal Products, including SolidWorks 2022+, Excel, Epicor Eclipse Eterm, Realtrac Shop Management Software, Microsoft file system, PDFs, Google Chrome, Microsoft Printer, and Microsoft local server folders.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-technical-requirements" role="tabpanel" aria-labelledby="nav-technical-requirements-tab">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h2 class="card-title"><i class="fas fa-cogs"></i> Technical Requirements</h2>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item" data-bs-toggle
+
+="tooltip" data-bs-placement="top" title="Automate design tasks and data extraction using SolidWorks API."><span class="badge bg-secondary">SolidWorks 2022+</span> Automate design tasks and data extraction using SolidWorks API.</li>
+                            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Automate data manipulation and reporting."><span class="badge bg-secondary">Excel</span> Automate data manipulation and reporting.</li>
+                            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Automate terminal interactions."><span class="badge bg-secondary">Epicor Eclipse Eterm</span> Automate terminal interactions.</li>
+                            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Automate GUI interactions."><span class="badge bg-secondary">Realtrac Shop Management Software</span> Automate GUI interactions.</li>
+                            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Automate file management tasks."><span class="badge bg-secondary">Microsoft File System</span> Automate file management tasks.</li>
+                            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Automate PDF creation, manipulation, and data extraction."><span class="badge bg-secondary">PDFs</span> Automate PDF creation, manipulation, and data extraction.</li>
+                            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Automate browser tasks for web-based processes."><span class="badge bg-secondary">Google Chrome</span> Automate browser tasks for web-based processes.</li>
+                            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Automate printing tasks."><span class="badge bg-secondary">Microsoft Printer</span> Automate printing tasks.</li>
+                            <li class="list-group-item" data-bs-toggle="tooltip" data-bs-placement="top" title="Automate server folder management."><span class="badge bg-secondary">Microsoft Local Server Folders</span> Automate server folder management.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-technology-stack" role="tabpanel" aria-labelledby="nav-technology-stack-tab">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h2 class="card-title"><i class="fas fa-layer-group"></i> Technology Stack and Libraries</h2>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><span class="badge bg-info">Python</span> Primary programming language for scripting and automation.</li>
+                            <li class="list-group-item"><span class="badge bg-info">Libraries</span>:
+                                <ul class="list-group">
+                                    <li class="list-group-item"><span class="badge bg-light text-dark">SolidWorks</span> `swpy`</li>
+                                    <li class="list-group-item"><span class="badge bg-light text-dark">Excel</span> `pandas`, `openpyxl`, `xlrd`, `xlwt`</li>
+                                    <li class="list-group-item"><span class="badge bg-light text-dark">Epicor Eclipse Eterm</span> `pyte`, `pyexpect`</li>
+                                    <li class="list-group-item"><span class="badge bg-light text-dark">Realtrac</span> `pyautogui`, `pywinauto`</li>
+                                    <li class="list-group-item"><span class="badge bg-light text-dark">File System</span> `os`, `shutil`, `pathlib`</li>
+                                    <li class="list-group-item"><span class="badge bg-light text-dark">PDFs</span> `PyPDF2`, `reportlab`, `pdfplumber`</li>
+                                    <li class="list-group-item"><span class="badge bg-light text-dark">Google Chrome</span> `selenium`, `beautifulsoup4`, `requests`</li>
+                                    <li class="list-group-item"><span class="badge bg-light text-dark">Printer</span> `win32print`, `win32api`</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-implementation-plan" role="tabpanel" aria-labelledby="nav-implementation-plan-tab">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h2 class="card-title"><i class="fas fa-tasks"></i> Implementation Plan</h2>
+                        <div class="accordion" id="implementationAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="phase1Heading">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#phase1" aria-expanded="true" aria-controls="phase1">
+                                        Phase 1: Requirements Gathering and Analysis
+                                    </button>
+                                </h2>
+                                <div id="phase1" class="accordion-collapse collapse show" aria-labelledby="phase1Heading" data-bs-parent="#implementationAccordion">
+                                    <div class="accordion-body">
+                                        - Conduct detailed analysis of current processes and identify key areas for automation.
+                                        - Engage with CAD Lead, Sales Manager, GM, Plant Manager, and Owners to gather requirements.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="phase2Heading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#phase2" aria-expanded="false" aria-controls="phase2">
+                                        Phase 2: Development
+                                    </button>
+                                </h2>
+                                <div id="phase2" class="accordion-collapse collapse" aria-labelledby="phase2Heading" data-bs-parent="#implementationAccordion">
+                                    <div class="accordion-body">
+                                        - Develop automation scripts for each application and process.
+                                        - Implement a licensing system with key validation and time-limited licenses.
+                                        - Obfuscate and encrypt code to protect intellectual property.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="phase3Heading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#phase3" aria-expanded="false" aria-controls="phase3">
+                                        Phase 3: Testing
+                                    </button>
+                                </h2>
+                                <div id="phase3" class="accordion-collapse collapse" aria-labelledby="phase3Heading" data-bs-parent="#implementationAccordion">
+                                    <div class="accordion-body">
+                                        - Perform unit testing and integration testing.
+                                        - Conduct user acceptance testing (UAT) with key stakeholders.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="phase4Heading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#phase4" aria-expanded="false" aria-controls="phase4">
+                                        Phase 4: Deployment
+                                    </button>
+                                </h2>
+                                <div id="phase4" class="accordion-collapse collapse" aria-labelledby="phase4Heading" data-bs-parent="#implementationAccordion">
+                                    <div class="accordion-body">
+                                        - Deploy automation tools across the company.
+                                        - Provide training and documentation to users.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="phase5Heading">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#phase5" aria-expanded="false" aria-controls="phase5">
+                                        Phase 5: Maintenance and Support
+                                    </button>
+                                </h2>
+                                <div id="phase5" class="accordion-collapse collapse" aria-labelledby="phase5Heading" data-bs-parent="#implementationAccordion">
+                                    <div class="accordion-body">
+                                        - Offer ongoing support and updates.
+                                        - Gather feedback and continuously improve the automation tools.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-time-savings" role="tabpanel" aria-labelledby="nav-time-savings-tab">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h2 class="card-title"><i class="fas fa-clock"></i> Evaluating Time Savings for Investment Justification</h2>
+                        <p class="card-text">
+                            <strong>Current Manual Process Analysis</strong><br>
+                            <ul>
+                                <li>Data Entry in Excel: 1 hour per day, 5 hours per week</li>
+                                <li>Generating Reports from Realtrac: 2 hours per report, 2 hours per week</li>
+                            </ul>
+                            <strong>Proposed Automation Solution</strong><br>
+                            <ul>
+                                <li>Data Entry in Excel: 10 minutes per day, 50 minutes per week</li>
+                                <li>Generating Reports from Realtrac: 15 minutes per report, 15 minutes per week</li>
+                            </ul>
+                            <strong>Time Savings
+
+ Calculation</strong><br>
+                            <ul>
+                                <li>Data Entry in Excel: 4 hours and 10 minutes saved per week, 208.5 hours saved annually</li>
+                                <li>Report Generation: 1 hour and 45 minutes saved per week, 87.5 hours saved annually</li>
+                                <li>Total Annual Time Savings: 296 hours</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-pricing-strategy" role="tabpanel" aria-labelledby="nav-pricing-strategy-tab">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h2 class="card-title"><i class="fas fa-dollar-sign"></i> Pricing Strategy</h2>
+                        <p class="card-text">
+                            <strong>Market Research and Pricing</strong><br>
+                            <ul>
+                                <li>Base License Fee: $2,000 per license per year</li>
+                                <li>Volume Discounts: 6-10 licenses: $1,800 per license per year</li>
+                            </ul>
+                            <strong>Pricing Model Calculation</strong><br>
+                            <ul>
+                                <li>6 licenses: $10,800</li>
+                                <li>10 licenses: $18,000</li>
+                                <li>Average License Fees (for 8 licenses): $14,400</li>
+                                <li>Renewal for 8 licenses: $11,520</li>
+                                <li>Premium Support for 8 licenses: $4,000</li>
+                                <li>Total Annual Revenue: $29,920</li>
+                                <li>Total over four years: $119,680</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-strategic-value" role="tabpanel" aria-labelledby="nav-strategic-value-tab">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h2 class="card-title"><i class="fas fa-chart-line"></i> Long-term Strategic Value</h2>
+                        <p class="card-text">
+                            <strong>Employee Raises</strong><br>
+                            Increased Productivity: Automation will allow employees to focus on higher-value tasks, increasing overall productivity.<br>
+                            Cost Savings Reinvestment: Savings from reduced manual labor can be reinvested into employee salaries, providing raises and improving job satisfaction.<br>
+                            <strong>New Building Funding</strong><br>
+                            Cost Savings: Annual savings from automation can be pooled towards a fund for a new building.<br>
+                            Revenue from Licensing: Additional revenue from selling licenses and renewals can be allocated towards strategic investments, including new facilities.<br>
+                            <strong>Business Growth</strong><br>
+                            Scalability: The automation solution is scalable, allowing for expansion and increased savings as the business grows.<br>
+                            Competitive Advantage: Enhanced operational efficiency will provide a competitive edge, potentially leading to increased market share and business growth.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-risk-management" role="tabpanel" aria-labelledby="nav-risk-management-tab">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h2 class="card-title"><i class="fas fa-exclamation-triangle"></i> Risk Management</h2>
+                        <p class="card-text">
+                            <strong>Identification of Risks</strong><br>
+                            Technical Risks: Potential technical challenges in integrating automation with existing systems.<br>
+                            Implementation Risks: Possible delays or issues during the deployment phase.<br>
+                            Financial Risks: Budget overruns or insufficient revenue generation.<br>
+                            Operational Risks: Resistance to change or lack of user adoption.<br>
+                            <strong>Mitigation Strategies</strong><br>
+                            Technical Risks: Conduct thorough testing and pilot implementations to identify and resolve issues early.<br>
+                            Implementation Risks: Develop a detailed project plan with contingency measures.<br>
+                            Financial Risks: Monitor budget closely and adjust pricing strategies if necessary.<br>
+                            Operational Risks: Provide comprehensive training and support to encourage user adoption.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-timeline" role="tabpanel" aria-labelledby="nav-timeline-tab">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h2 class="card-title"><i class="fas fa-calendar-alt"></i> Timeline & Milestones</h2>
+                        <p class="card-text">
+                            <strong>Detailed Project Timeline</strong><br>
+                            Month 1-2: Requirements Gathering and Analysis<br>
+                            Month 3-5: Development<br>
+                            Month 6: Testing<br>
+                            Month 7: Deployment<br>
+                            Month 8-12: Maintenance and Support<br>
+                            <strong>Milestone Descriptions</strong><br>
+                            Milestone 1: Completion of Requirements Analysis<br>
+                            Milestone 2: Development of Core Automation Scripts<br>
+                            Milestone 3: Successful Testing and Validation<br>
+                            Milestone 4: Deployment Across the Company<br>
+                            Milestone 5: Full User Adoption and Operational Integration<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-resource-allocation" role="tabpanel" aria-labelledby="nav-resource-allocation-tab">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h2 class="card-title"><i class="fas fa-users"></i> Resource Allocation</h2>
+                        <p class="card-text">
+                            <strong>Resource Requirements</strong><br>
+                            Personnel: Developers, QA testers, project managers, and trainers.<br>
+                            Hardware: Servers, development workstations, and testing environments.<br>
+                            Software: Development tools, libraries, and testing software.<br>
+                            <strong>Responsibility Assignment</strong><br>
+                            Project Manager: Oversee project progress and coordinate tasks.<br>
+                            Developers: Write and maintain automation scripts.<br>
+                            QA Testers: Ensure the quality and reliability of the automation solution.<br>
+                            Trainers: Conduct training sessions and provide user support.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-testimonials" role="tabpanel" aria-labelledby="nav-testimonials-tab">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h2 class="card-title"><i class="fas fa-quote-right"></i> Customer Testimonials or Case Studies</h2>
+                        <p class="card-text">
+                            <strong>Proof of Concept</strong><br>
+                            Testimonial 1: "Implementing AMP ProAutomation Suite significantly reduced our data entry time and improved accuracy." - [Customer Name]<br>
+                            Case Study: A detailed case study highlighting a similar project where automation led to a 30% increase in efficiency and a 20% reduction in costs.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-financial-projections" role="tabpanel" aria-labelledby="nav-financial-projections-tab">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h2 class="card-title"><i class="fas fa-chart-bar"></i> Detailed Financial Projections</h2>
+                        <div class="chart-container">
+                            <canvas id="financialChart"></canvas>
+                        </div>
+                        <p class="card-text mt-3">
+                            <strong>Cost Breakdown</strong><br>
+                            Development Costs: $50,000<br>
+                            Deployment Costs: $20,000<br>
+                            Maintenance and Support Costs: $10,000 per year<br>
+                            Training Costs: $5,000<br>
+                            <strong>Revenue Projections</strong><br>
+                            Year 1: $29,920<br>
+                            Year 2: $29,920<br>
+                            Year 3: $29,920<br>
+                            Year 4: $29,920<br>
+                            Total over four years = $119,680<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-stakeholder-analysis" role="tabpanel" aria-labelledby="nav-stakeholder-analysis-tab">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h2 class="card-title"><i class="fas fa-users-cog"></i> Stakeholder Analysis</h2>
+                        <p class="card-text">
+                            <strong>Identification of Stakeholders</strong><br>
+                            CAD Lead: Key user of the automation solution.<br>
+                            Sales Manager: Benefits from improved reporting and data accuracy.<br>
+                            General Manager: Oversees operational efficiency and cost savings.<br>
+                            Plant Manager: Directly impacted by shop floor automation.<br>
+                            Owners: Interested in overall financial benefits and strategic growth.<br>
+                            <strong>Stakeholder Interests</strong><br>
+                            CAD Lead: Ease of use and reliability of automation tools.<br>
+                            Sales Manager: Accurate and timely data for decision-making.<br>
+                            General Manager: Overall efficiency and cost reduction.<br>
+                            Plant Manager: Improved workflow and reduced manual labor.<br>
+                            Owners: Return on investment and long-term strategic value.<br>
+                        </p>
+                   
+
+ </div>
+                </div>
+            </div>
+
+                        <div class="tab-pane fade" id="nav-python-env" role="tabpanel" aria-labelledby="nav-python-env-tab">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h2 class="card-title"><i class="fas fa-code"></i> Setting Up Your Python Environment and Project</h2>
+                        <p class="card-text">
+                            Here's a complete guide to setting up your Python environment and project, incorporating best practices such as using virtual environments, version control with Git, and structuring your project.<br>
+                            <strong>1. Install Python and Pip</strong><br>
+                            Ensure you have Python 3.8+ installed on your system. You can download it from <a href="https://www.python.org/downloads/">Python's official website</a>.<br>
+                            <strong>2. Set Up a Virtual Environment</strong><br>
+                            <ol>
+                                <li><strong>Create a Project Directory</strong>:
+                                    <pre><code>mkdir AMP_Automation_Project
+cd AMP_Automation_Project</code></pre>
+                                </li>
+                                <li><strong>Set Up Virtual Environment</strong>:
+                                    <pre><code>python -m venv venv</code></pre>
+                                </li>
+                                <li><strong>Activate Virtual Environment</strong>:
+                                    <pre><code># On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate</code></pre>
+                                </li>
+                            </ol>
+                            <strong>3. Install Necessary Libraries</strong><br>
+                            Install the libraries you’ll need for your project:
+                            <pre><code>pip install swpy pandas openpyxl xlrd xlwt pyte pexpect pyautogui pywinauto os shutil pathlib PyPDF2 reportlab pdfplumber selenium beautifulsoup4 requests win32print pywin32</code></pre>
+                            <strong>4. Set Up Version Control with Git</strong><br>
+                            <ol>
+                                <li><strong>Initialize Git Repository</strong>:
+                                    <pre><code>git init</code></pre>
+                                </li>
+                                <li><strong>Create a .gitignore File</strong><br>
+                                    Create a `.gitignore` file to exclude unnecessary files and directories from being tracked by Git. Add the following to `.gitignore`:
+                                    <pre><code>venv/
+__pycache__/
+.DS_Store
+*.pyc
+*.pyo
+*.pyd
+.vscode/</code></pre>
+                                </li>
+                                <li><strong>Initial Commit</strong>:
+                                    <pre><code>git add .
+git commit -m "Initial commit"</code></pre>
+                                </li>
+                            </ol>
+                            <strong>5. Project Structure</strong><br>
+                            Set up your project directory structure following best practices:
+                            <pre><code>AMP_Automation_Project/
+├── venv/
+├── src/
+│   ├── __init__.py
+│   ├── data_entry/
+│   │   ├── __init__.py
+│   │   └── data_entry.py
+│   ├── report_generation/
+│   │   ├── __init__.py
+│   │   └── report_generation.py
+│   ├── automation/
+│   │   ├── __init__.py
+│   │   └── automation.py
+│   ├── common/
+│   │   ├── __init__.py
+│   │   └── utils.py
+│   └── main.py
+├── tests/
+│   ├── __init__.py
+│   ├── test_data_entry.py
+│   ├── test_report_generation.py
+│   └── test_automation.py
+├── .gitignore
+├── README.md
+└── requirements.txt</code></pre>
+                            <strong>6. Create a README File</strong><br>
+                            Create a `README.md` file to document your project:
+                            <pre><code># AMP Automation Project
+
+This project automates various tasks at Aladdin Metal Products using Python.
+
+## Project Structure
+
+- `src/`: Contains all source code
+  - `data_entry/`: Automation scripts for data entry tasks
+  - `report_generation/`: Automation scripts for report generation tasks
+  - `automation/`: General automation scripts
+  - `common/`: Utility functions and common code
+  - `main.py`: Entry point for the project
+- `tests/`: Contains all test scripts
+- `venv/`: Virtual environment
+- `.gitignore`: Git ignore file
+- `README.md`: Project documentation
+- `requirements.txt`: List of project dependencies
+
+## Setup
+
+1. **Create and activate virtual environment**:
+    <pre><code>python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`</code></pre>
+
+2. **Install dependencies**:
+    <pre><code>pip install -r requirements.txt</code></pre>
+
+3. **Run the project**:
+    <pre><code>python src/main.py</code></pre>
+
+## Testing
+
+To run tests:
+<pre><code>pytest</code></pre></code></pre>
+                            <strong>7. Create a Requirements File</strong><br>
+                            Generate a `requirements.txt` file to list all dependencies:
+                            <pre><code>pip freeze > requirements.txt</code></pre>
+                            <strong>8. Set Up Testing</strong><br>
+                            Install `pytest` for running tests:
+                            <pre><code>pip install pytest</code></pre>
+                            Add basic test cases in the `tests` directory:
+                            <strong>Example test file: `tests/test_data_entry.py`</strong>
+                            <pre><code>import pytest
+from src.data_entry.data_entry import some_function
+
+def test_some_function():
+    assert some_function() == expected_result</code></pre>
+                            <strong>9. Final Steps</strong><br>
+                            <ol>
+                                <li><strong>Add and Commit Changes</strong>:
+                                    <pre><code>git add .
+git commit -m "Set up project structure and initial configurations"</code></pre>
+                                </li>
+                                <li><strong>Create a Remote Repository</strong><br>
+                                    Create a repository on GitHub or another Git service and push your local repository:
+                                    <pre><code>git remote add origin <repository_url>
+git push -u origin master</code></pre>
+                                </li>
+                            </ol>
+                            <strong>10. Project Maintenance</strong><br>
+                            <ul>
+                                <li>Regular Commits: Commit your changes regularly with meaningful commit messages.</li>
+                                <li>Branching: Use Git branching for new features or bug fixes.</li>
+                                <li>Documentation: Keep your `README.md` and in-code comments updated.</li>
+                                <li>Code Review: If possible, have peers review your code.</li>
+                            </ul>
+                            By following these steps, you’ll ensure a well-organized, maintainable, and professional Python project setup, ready for development and collaboration.<br>
+                            If you need any further customization or additional details, feel free to ask!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-pane fade" id="nav-conclusion" role="tabpanel" aria-labelledby="nav-conclusion-tab">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h2 class="card-title"><i class="fas fa-check"></i> Conclusion</h2>
+                        <p class="card-text">
+                            The proposed automation solution for Aladdin Metal Products aims to deliver significant time and cost savings, enhancing overall operational efficiency. By implementing a strategic pricing model and demonstrating clear ROI through substantial time savings, this investment is positioned to provide long-term value and profitability for all stakeholders involved. Additionally, the strategic allocation of savings and revenues will support employee raises and fund new infrastructure, driving sustained business growth and success.<br>
+                            This enhanced document emphasizes not only the immediate financial benefits but also the long-term strategic value, addressing both operational improvements and broader business goals such as employee satisfaction and infrastructure development. This comprehensive approach should help convince owners and stakeholders of the investment's value.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+
+            document.getElementById('search-tabs').addEventListener('input', function (e) {
+                var searchText = e.target.value.toLowerCase();
+                document.querySelectorAll('.nav-link').forEach(function (tab) {
+                    var tabText = tab.textContent.toLowerCase();
+                    if (tabText.includes(searchText)) {
+                        tab.style.display = '';
+                    } else {
+                        tab.style.display = 'none';
+                    }
+                });
+            });
+
+            var ctx = document.getElementById('financialChart').getContext('2d');
+            var financialChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Year 1', 'Year 2', 'Year 3', 'Year 4'],
+                    datasets: [{
+                        label: 'Revenue Projections',
+                        data: [29920, 29920, 29920, 29920],
+                        backgroundColor: [
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(75, 192, 192, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(75, 192, 192, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
